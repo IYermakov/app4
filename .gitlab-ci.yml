@@ -1,0 +1,16 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script: mvn compile
+
+test:
+  stage: test
+  script: mvn test
+
+deploy:
+  stage: deploy
+  script: mvn tomcat7:deploy
