@@ -1,70 +1,28 @@
-date:2018-10-30 11:56:46	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization started
-date:2018-10-30 11:56:47	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped "{[/],methods=[GET || POST]}" onto public java.lang.String net.test.edu.app.welcome.HelloController.home(java.util.Locale,org.springframework.ui.Model)
-date:2018-10-30 11:56:47	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Tue Oct 30 11:56:46 EET 2018]; parent: Root WebApplicationContext
-date:2018-10-30 11:56:47	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Tue Oct 30 11:56:46 EET 2018]; parent: Root WebApplicationContext
-date:2018-10-30 11:56:47	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-date:2018-10-30 11:56:47	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-date:2018-10-30 11:56:47	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization completed in 942 ms
-date:2018-10-30 12:01:31	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization started
-date:2018-10-30 12:01:31	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped "{[/],methods=[GET || POST]}" onto public java.lang.String net.test.edu.app.welcome.HelloController.home(java.util.Locale,org.springframework.ui.Model)
-date:2018-10-30 12:01:32	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Tue Oct 30 12:01:31 EET 2018]; parent: Root WebApplicationContext
-date:2018-10-30 12:01:32	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Tue Oct 30 12:01:31 EET 2018]; parent: Root WebApplicationContext
-date:2018-10-30 12:01:32	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-date:2018-10-30 12:01:32	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
-date:2018-10-30 12:01:32	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization completed in 1100 ms
-date:2018-10-30 12:02:27	thread:qtp235154585-14	X-Track:122b1e474e71441c88de53f0381db283	level:ERROR	logger:o.t.gfw.common.exception.ExceptionLogger        	message:[e.xx.fw.9001] The request was rejected because the URL contained a potentially malicious String ";"
-org.springframework.security.web.firewall.RequestRejectedException: The request was rejected because the URL contained a potentially malicious String ";"
-	at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlacklistedUrls(StrictHttpFirewall.java:140)
-	at org.springframework.security.web.firewall.StrictHttpFirewall.getFirewalledRequest(StrictHttpFirewall.java:120)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:193)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.terasoluna.gfw.web.logging.mdc.AbstractMDCPutFilter.doFilterInternal(AbstractMDCPutFilter.java:116)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.terasoluna.gfw.web.exception.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:100)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.terasoluna.gfw.web.logging.mdc.MDCClearFilter.doFilterInternal(MDCClearFilter.java:51)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:503)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
-	at java.lang.Thread.run(Thread.java:748)
-date:2018-10-30 12:02:31	thread:qtp235154585-17	X-Track:a2bc906e58454316a2e40777303ea491	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] HelloController.home(Locale,Model)
-date:2018-10-30 12:02:31	thread:qtp235154585-17	X-Track:a2bc906e58454316a2e40777303ea491	level:INFO 	logger:net.test.edu.app.welcome.HelloController        	message:Welcome home! The client locale is en_US.
-date:2018-10-30 12:02:31	thread:qtp235154585-17	X-Track:a2bc906e58454316a2e40777303ea491	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] HelloController.home(Locale,Model)-> view=welcome/home, model={serverTime=October 30, 2018 12:02:31 PM EET}
-date:2018-10-30 12:02:31	thread:qtp235154585-17	X-Track:a2bc906e58454316a2e40777303ea491	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] HelloController.home(Locale,Model)-> 18,437,094 ns
-date:2018-10-30 12:02:51	thread:qtp235154585-11	X-Track:7e2c7fa3c99647f09ab9b4e0221fd63d	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[START CONTROLLER] HelloController.home(Locale,Model)
-date:2018-10-30 12:02:51	thread:qtp235154585-11	X-Track:7e2c7fa3c99647f09ab9b4e0221fd63d	level:INFO 	logger:net.test.edu.app.welcome.HelloController        	message:Welcome home! The client locale is en_US.
-date:2018-10-30 12:02:51	thread:qtp235154585-11	X-Track:7e2c7fa3c99647f09ab9b4e0221fd63d	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[END CONTROLLER  ] HelloController.home(Locale,Model)-> view=welcome/home, model={serverTime=October 30, 2018 12:02:51 PM EET}
-date:2018-10-30 12:02:51	thread:qtp235154585-11	X-Track:7e2c7fa3c99647f09ab9b4e0221fd63d	level:TRACE	logger:o.t.gfw.web.logging.TraceLoggingInterceptor     	message:[HANDLING TIME   ] HelloController.home(Locale,Model)-> 585,014 ns
+date:2018-11-04 17:18:56	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization started
+date:2018-11-04 17:18:56	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped "{[/],methods=[GET || POST]}" onto public java.lang.String net.test.edu.app.welcome.HelloController.home(java.util.Locale,org.springframework.ui.Model)
+date:2018-11-04 17:18:57	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Sun Nov 04 17:18:56 EET 2018]; parent: Root WebApplicationContext
+date:2018-11-04 17:18:57	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Sun Nov 04 17:18:56 EET 2018]; parent: Root WebApplicationContext
+date:2018-11-04 17:18:57	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+date:2018-11-04 17:18:57	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+date:2018-11-04 17:18:57	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization completed in 971 ms
+date:2018-11-04 17:19:16	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization started
+date:2018-11-04 17:19:16	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped "{[/],methods=[GET || POST]}" onto public java.lang.String net.test.edu.app.welcome.HelloController.home(java.util.Locale,org.springframework.ui.Model)
+date:2018-11-04 17:19:16	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Sun Nov 04 17:19:16 EET 2018]; parent: Root WebApplicationContext
+date:2018-11-04 17:19:16	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Sun Nov 04 17:19:16 EET 2018]; parent: Root WebApplicationContext
+date:2018-11-04 17:19:16	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+date:2018-11-04 17:19:16	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+date:2018-11-04 17:19:17	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization completed in 986 ms
+date:2018-11-04 17:23:00	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization started
+date:2018-11-04 17:23:00	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped "{[/],methods=[GET || POST]}" onto public java.lang.String net.test.edu.app.welcome.HelloController.home(java.util.Locale,org.springframework.ui.Model)
+date:2018-11-04 17:23:01	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Sun Nov 04 17:23:00 EET 2018]; parent: Root WebApplicationContext
+date:2018-11-04 17:23:01	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Sun Nov 04 17:23:00 EET 2018]; parent: Root WebApplicationContext
+date:2018-11-04 17:23:01	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+date:2018-11-04 17:23:01	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+date:2018-11-04 17:23:01	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization completed in 1023 ms
+date:2018-11-04 18:08:19	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization started
+date:2018-11-04 18:08:19	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerMapping      	message:Mapped "{[/],methods=[GET || POST]}" onto public java.lang.String net.test.edu.app.welcome.HelloController.home(java.util.Locale,org.springframework.ui.Model)
+date:2018-11-04 18:08:19	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Sun Nov 04 18:08:19 EET 2018]; parent: Root WebApplicationContext
+date:2018-11-04 18:08:20	thread:main	X-Track:	level:INFO 	logger:o.s.w.s.m.m.a.RequestMappingHandlerAdapter      	message:Looking for @ControllerAdvice: WebApplicationContext for namespace 'appServlet-servlet': startup date [Sun Nov 04 18:08:19 EET 2018]; parent: Root WebApplicationContext
+date:2018-11-04 18:08:20	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+date:2018-11-04 18:08:20	thread:main	X-Track:	level:INFO 	logger:o.s.web.servlet.handler.SimpleUrlHandlerMapping 	message:Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+date:2018-11-04 18:08:20	thread:main	X-Track:	level:INFO 	logger:o.springframework.web.servlet.DispatcherServlet 	message:FrameworkServlet 'appServlet': initialization completed in 944 ms
